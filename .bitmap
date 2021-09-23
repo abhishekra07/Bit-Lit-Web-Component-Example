@@ -9,5 +9,11 @@
  */
 
 {
+    "custom-table": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mfe/custom-table"
+    },
     "$schema-version": "14.9.0"
 }

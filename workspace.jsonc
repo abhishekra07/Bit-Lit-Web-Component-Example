@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "myorganization",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "mfe"
   },
   /**
    * main configuration for component dependency resolution.
@@ -54,10 +54,13 @@
      * "*" is a special rule which applied on all components in the workspace.
      **/
     "*": {
-      /**
-       * uncomment to apply the chosen environment on all components.
-       **/
-      // "teambit.react/react": { }
+      "teambit.web-components/lit@0.0.11":{}
     }
-  }
+  },
+  "teambit.generator/generator": {
+    "aspects": [
+      "teambit.web-components/lit@0.0.11"
+    ]
+  },
+  "teambit.web-components/lit@0.0.11":{}
 }
