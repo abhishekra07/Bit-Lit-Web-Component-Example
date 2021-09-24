@@ -10,7 +10,7 @@ export class CustomTable extends LitElement {
 
   gridOptions: GridOptions = {};
 
-  firstUpdate() {
+  firstUpdated(changedProperties) {
     this.gridOptions = {
       columnDefs: [
           { field: "make" },
@@ -25,7 +25,8 @@ export class CustomTable extends LitElement {
       defaultColDef: {
         editable: false,
         resizable: true
-      }
+      },
+      domLayout: "autoHeight"
     }
     let eGridDiv: HTMLElement = document.getElementById('myGrid');
     new Grid(eGridDiv, this.gridOptions);
@@ -37,6 +38,9 @@ export class CustomTable extends LitElement {
   }
 
   render() {
-    return html`<div id="myGrid" style="height: 200px; width:500px;" class="ag-theme-material"></div>`;
+    return html`<div class="container">
+                  <div id="myGrid" style="width:100%;" class="ag-theme-material">
+                  </div>
+                </div>`;
   }
 }
