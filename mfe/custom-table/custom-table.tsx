@@ -10,7 +10,7 @@ export class CustomTable extends LitElement {
 
   gridOptions: GridOptions = {};
 
-  firstUpdate(){
+  firstUpdate() {
     this.gridOptions = {
       columnDefs: [
           { field: "make" },
@@ -21,7 +21,11 @@ export class CustomTable extends LitElement {
           { make: "Toyota", model: "Celica", price: 35000 },
           { make: "Ford", model: "Mondeo", price: 32000 },
           { make: "Porsche", model: "Boxter", price: 72000 }
-        ]
+        ],
+      defaultColDef: {
+        editable: false,
+        resizable: true
+      }
     }
     let eGridDiv: HTMLElement = document.getElementById('myGrid');
     new Grid(eGridDiv, this.gridOptions);
