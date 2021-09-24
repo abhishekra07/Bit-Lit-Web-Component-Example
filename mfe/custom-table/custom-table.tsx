@@ -27,6 +27,11 @@ export class CustomTable extends LitElement {
     new Grid(eGridDiv, this.gridOptions);
   }
 
+  /** Get Rid of shadow DOM */
+  createRenderRoot() {
+    return this;
+  }
+
   render() {
     return html`<div id="myGrid" style="height: 200px; width:500px;" class="ag-theme-material"></div>`;
   }
