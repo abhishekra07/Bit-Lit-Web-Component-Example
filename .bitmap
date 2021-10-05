@@ -21,5 +21,11 @@
         "mainFile": "index.ts",
         "rootDir": "mfe/featured-info"
     },
+    "notification-bar": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mfe/notification-bar"
+    },
     "$schema-version": "14.9.0"
 }
