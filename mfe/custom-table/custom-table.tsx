@@ -1,7 +1,8 @@
 import {html, css, LitElement} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import moment from "moment-js";
 
-import { Grid, GridOptions }  from 'ag-grid-community';
+import { Grid, GridOptions, MoveColumnFeature }  from 'ag-grid-community';
 
 import './custom-table.css';
 
@@ -21,15 +22,15 @@ export class CustomTable extends LitElement {
         ],
       rowData: [
           { id: 1, name: "Abhishek R", dob: "11/08/1997", "job title": "Software Developer", "contact no": "8877676666"},
-          { id: 2, name: "Rahul A", dob: "19/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
-          { id: 3, name: "Ajay S", dob: "21/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
+          { id: 2, name: "Rahul A", dob: "12/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
+          { id: 3, name: "Ajay S", dob: "09/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
           { id: 4, name: "Ramesh R", dob: "03/05/1994", "job title": "Data Engineer", "contact no": "8870006666"},
-          { id: 5, name: "Rajesh", dob: "13/09/1998", "job title": "Data Analyst", "contact no": "8877611366"},
-          { id: 1, name: "Abhishek R", dob: "11/08/1997", "job title": "Software Developer", "contact no": "8877676666"},
-          { id: 2, name: "Rahul A", dob: "19/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
-          { id: 3, name: "Ajay S", dob: "21/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
-          { id: 4, name: "Ramesh R", dob: "03/05/1994", "job title": "Data Engineer", "contact no": "8870006666"},
-          { id: 5, name: "Rajesh", dob: "13/09/1998", "job title": "Data Analyst", "contact no": "8877611366"}
+          { id: 5, name: "Rajesh", dob: "01/09/1998", "job title": "Data Analyst", "contact no": "8877611366"},
+          { id: 1, name: "Abhishek R", dob: "05/08/1997", "job title": "Software Developer", "contact no": "8877676666"},
+          { id: 2, name: "Rahul A", dob: "02/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
+          { id: 3, name: "Ajay S", dob: "11/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
+          { id: 4, name: "Ramesh R", dob: "07/05/1994", "job title": "Data Engineer", "contact no": "8870006666"},
+          { id: 5, name: "Rajesh", dob: "04/09/1998", "job title": "Data Analyst", "contact no": "8877611366"}
         ],
       defaultColDef: {
         editable: false,
@@ -39,6 +40,7 @@ export class CustomTable extends LitElement {
         sortingOrder: ['desc','asc']
       },
       domLayout: "autoHeight",
+      pagination:true,
       onGridReady: () => {
         this.setColumnSize();
       }
@@ -57,7 +59,7 @@ export class CustomTable extends LitElement {
   }
 
   render() {
-    return html`<div class="container full">
+    return html`<div class="container wrapper">
                   <div id="myGrid" class="ag-theme-material">
                   </div>
                 </div>`;
