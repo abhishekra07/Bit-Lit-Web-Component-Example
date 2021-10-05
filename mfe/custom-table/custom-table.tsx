@@ -13,23 +13,42 @@ export class CustomTable extends LitElement {
   firstUpdated(changedProperties) {
     this.gridOptions = {
       columnDefs: [
-          { field: "make" },
-          { field: "model" },
-          { field: "price" }
+          { field: "id" },
+          { field: "name" },
+          { field: "dob" },
+          { field: "job title" },
+          { field: "contact no" }
         ],
       rowData: [
-          { make: "Toyota", model: "Celica", price: 35000 },
-          { make: "Ford", model: "Mondeo", price: 32000 },
-          { make: "Porsche", model: "Boxter", price: 72000 }
+          { id: 1, name: "Abhishek R", dob: "11/08/1997", "job title": "Software Developer", "contact no": "8877676666"},
+          { id: 2, name: "Rahul A", dob: "19/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
+          { id: 3, name: "Ajay S", dob: "21/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
+          { id: 4, name: "Ramesh R", dob: "03/05/1994", "job title": "Data Engineer", "contact no": "8870006666"},
+          { id: 5, name: "Rajesh", dob: "13/09/1998", "job title": "Data Analyst", "contact no": "8877611366"},
+          { id: 1, name: "Abhishek R", dob: "11/08/1997", "job title": "Software Developer", "contact no": "8877676666"},
+          { id: 2, name: "Rahul A", dob: "19/04/1999", "job title": "Frontend Developer", "contact no": "8875676666"},
+          { id: 3, name: "Ajay S", dob: "21/03/1995", "job title": "Devops Engineer", "contact no": "8877947666"},
+          { id: 4, name: "Ramesh R", dob: "03/05/1994", "job title": "Data Engineer", "contact no": "8870006666"},
+          { id: 5, name: "Rajesh", dob: "13/09/1998", "job title": "Data Analyst", "contact no": "8877611366"}
         ],
       defaultColDef: {
         editable: false,
-        resizable: true
+        resizable: true,
+        sortable: true,
+        sort: 'desc',
+        sortingOrder: ['desc','asc']
       },
-      domLayout: "autoHeight"
+      domLayout: "autoHeight",
+      onGridReady: () => {
+        this.setColumnSize();
+      }
     }
     let eGridDiv: HTMLElement = document.getElementById('myGrid');
     new Grid(eGridDiv, this.gridOptions);
+  }
+
+  setColumnSize() {
+    this.gridOptions.api.sizeColumnsToFit();
   }
 
   /** Get Rid of shadow DOM */
@@ -38,8 +57,8 @@ export class CustomTable extends LitElement {
   }
 
   render() {
-    return html`<div class="container">
-                  <div id="myGrid" style="width:100%;" class="ag-theme-material">
+    return html`<div class="container full">
+                  <div id="myGrid" class="ag-theme-material">
                   </div>
                 </div>`;
   }

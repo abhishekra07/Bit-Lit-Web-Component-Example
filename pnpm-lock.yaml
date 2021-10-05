@@ -4,6 +4,7 @@ importers:
       ag-grid-community: registry.npmjs.org/ag-grid-community/26.0.0
       bootstrap: registry.npmjs.org/bootstrap/5.1.1
       lit: registry.npmjs.org/lit/2.0.0
+      moment-js: registry.npmjs.org/moment-js/1.1.15
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@teambit/web-components.lit': 0.0.11
@@ -17,6 +18,7 @@ importers:
       ag-grid-community: 26.0.0
       bootstrap: 5.1.1
       lit: ^2.0.0
+      moment-js: 1.1.15
   mfe/custom-table:
     specifiers: {}
 lockfileVersion: 5.2
@@ -2733,6 +2735,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz
     version: 1.0.4
+  registry.npmjs.org/moment-js/1.1.15:
+    dev: false
+    name: moment-js
+    resolution:
+      integrity: sha1-KNp5vjvyvEo9/9K4Nowo6GPKqdU=
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/moment-js/-/moment-js-1.1.15.tgz
+    version: 1.1.15
   registry.npmjs.org/ms/2.0.0:
     dev: true
     name: ms
