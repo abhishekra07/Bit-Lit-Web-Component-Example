@@ -1,6 +1,5 @@
 import {html, css, LitElement} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-import moment from "moment-js";
 
 import { Grid, GridOptions, MoveColumnFeature }  from 'ag-grid-community';
 

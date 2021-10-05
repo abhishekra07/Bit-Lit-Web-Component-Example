@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "custom-table",
+    "name": "my-components",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": ""
+    "defaultScope": "abhishek07.mfe"
   },
   /**
    * main configuration for component dependency resolution.

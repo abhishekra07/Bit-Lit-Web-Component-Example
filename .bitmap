@@ -15,5 +15,11 @@
         "mainFile": "index.ts",
         "rootDir": "mfe/custom-table"
     },
+    "featured-info": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mfe/featured-info"
+    },
     "$schema-version": "14.9.0"
 }
