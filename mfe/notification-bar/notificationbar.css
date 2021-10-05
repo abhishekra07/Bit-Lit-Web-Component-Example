@@ -1,6 +1,7 @@
 .topbar {
     width: 100%;
     height: 50px;
+    line-height: 50px;
     /* background-color: #5999ff; */
     position: sticky;
     top: 0;
@@ -35,18 +36,14 @@
       cursor: pointer;
   }
   .navigation-item {
-    color: rgba(255,255,255,.8);
-    min-width: 70px;
-    height: 35px;
-    padding: 5px;
-    margin-right: 10px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 20px;
-    cursor: pointer;
     background-color: #13b3fc;
-    transition: transform 0.2s ease-in;
-    border-radius: 10px;;
+    color: rgba(255,255,255,.8);
+    cursor: pointer;
+    font-size: 20px;
+    min-width: 70px;
+    padding: 0px 15px;
+    text-align: center;
+    transition: transform .2s ease-in;
   }
   .navigation-item:hover {
     color: rgba(255,255,255);
