@@ -10,14 +10,14 @@
 
 {
     "custom-table": {
-        "scope": "",
-        "version": "",
+        "scope": "abhishek07.mfe",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "mfe/custom-table"
     },
     "featured-info": {
-        "scope": "",
-        "version": "",
+        "scope": "abhishek07.mfe",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "mfe/featured-info"
     },
