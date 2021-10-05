@@ -22,8 +22,8 @@
         "rootDir": "mfe/featured-info"
     },
     "notification-bar": {
-        "scope": "",
-        "version": "",
+        "scope": "abhishek07.mfe",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mfe/notification-bar"
     },
