@@ -12,7 +12,10 @@ This project contains three web-componnets developed using Lit-Element :- Table,
 * bit create lit custom-table
 
 ## Preview
-Custom-Table
+1. Custom-Table
 ![table](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Table.PNG)
 
+2. Feature Cards
+![cards](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Feature.PNG)
+![cards-hover](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Feature-Hover.PNG)
  
