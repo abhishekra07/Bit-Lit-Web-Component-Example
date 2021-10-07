@@ -1,14 +1,14 @@
 # Bit-Lit-Web-Component-Example
 This project contains three web-componnets developed using Lit-Element :- Table, Feature Cards and Navbar.
 
-# Install Bit using below commands
+### Install Bit using below commands
 * npm i -g @teambit/bvm
 * bvm install
 
-# Initialize Project with below command
+### Initialize Project with below command
 * bit init
 
-# Command to create new lit component
+### Command to create new lit component
 * bit create lit custom-table
 
 ## Preview
@@ -24,3 +24,8 @@ This project contains three web-componnets developed using Lit-Element :- Table,
 ![navbar](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/navbar.PNG)
 ![navbar-hover](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Navbar-hover.PNG)
  
+##### How to run
+* Clone the project
+* Inside project directory run bit install
+* Bit start to run dev server
+* Go to browser and type http://localhost:3000
