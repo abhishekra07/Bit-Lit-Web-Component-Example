@@ -22,5 +22,5 @@ This project contains three web-componnets developed using Lit-Element :- Table,
 
 3. Navbar
 ![navbar](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/navbar.PNG)
-
+![navbar-hover](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Navbar-hover.PNG)
  
