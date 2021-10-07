@@ -23,7 +23,7 @@
     },
     "notification-bar": {
         "scope": "abhishek07.mfe",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mfe/notification-bar"
     },
