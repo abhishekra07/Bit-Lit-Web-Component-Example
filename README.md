@@ -13,6 +13,6 @@ This project contains three web-componnets developed using Lit-Element :- Table,
 
 ## Preview
 Custom-Table
-![table](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Feature-Hover.PNG)
+![table](https://github.com/abhishekra07/Bit-Lit-Web-Component-Example/blob/main/preview/Table.PNG)
 
  
