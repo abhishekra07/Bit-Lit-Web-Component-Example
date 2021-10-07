@@ -10,4 +10,7 @@ This project contains three web-componnets developed using Lit-Element :- Table,
 
 # Command to create new lit component
 * bit create lit custom-table
+
+## Preview
+Custom-Table
  
